@@ -2,7 +2,8 @@ Steps to follow in case of Ransomware Attack
 
 Immediately disconnect the infected computer from network.
 In extreme cases immediate routers need to be turned off from preventing the ransomware from spreading.
-Identify the Indicators of Compromise (IOC) and try to identify the rasomware family by Readme file left by the attackers and the encryption file format. The readme file contains email address of the attackers.
+Identify the Indicators of Compromise (IOC) and try to identify the rasomware family by Readme file left by the attackers and the encryption file format.
+The readme file contains email address of the attackers.
 Do not turn off or reboot the device.
 
 
@@ -10,7 +11,7 @@ Performing Host Analysis
 
 Identify any process that is connecting to the internet 
 Observe security solutions like SIEM to find any base64 string or powershell commands
-Look for ewly created compressed file formats like .zip, .rar, etc
+Look for newly created compressed file formats like .zip, .rar, etc
 Find suspicious login activity from outside the network
 Check the startup files, Scheduled tasks, etc for persistence 
 
@@ -20,7 +21,7 @@ MITRE ATT&CK techniques breakdown
 
 Initial Access: Spearphishing links, spearphishing attachments, explot public facing applications
 Execution: Command line interface, Execution through module load, powershell, user execution, scripting
-Privilege Escalation: Bpass User account control, Exploitation for privilege escalation, Access token manipulation
+Privilege Escalation: Bypass User account control, Exploitation for privilege escalation, Access token manipulation
 Defense Evasion: Obfuscation, disabling security tools, process hollowing
 Impact: Encrypted data, Persistence
 
@@ -38,4 +39,3 @@ Deactivate autoplay in all devices
 Install browser addon to block popups
 Apply least privilege principle
 Update your machines regularly
-
